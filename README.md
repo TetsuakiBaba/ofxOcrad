@@ -1,0 +1,1 @@
+This is a ocrad addon for openframeworks. you can treat ocrad library easily, just 2 lines.
