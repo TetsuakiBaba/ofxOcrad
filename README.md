@@ -10,8 +10,7 @@ For more details about ocrad library, please check <a href="http://www.gnu.org/s
 <ol>
 <li>makes a ofxOcrad directory in addon directory</li>
 <li>copy src, include and libs directory in ofxOcrad</li>
-<li>makes folder named "ofxOcrad" in addon folder on your xcode</li>
-<li>drag & drop "src", "include", "libs" folder to ofxOcrad folder on xcode</li>
+<li>drag & drop "ofxOcrad" directory to ofxOcrad folder on xcode</li>
 <li>done</li>
 </ol>
 
