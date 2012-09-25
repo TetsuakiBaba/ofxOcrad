@@ -22,5 +22,9 @@ For more details about ocrad library, please check <a href="http://www.gnu.org/s
 <li>printf("%d\n", ocrad.str_result);  // now you got result</li>
 </ol>
 
+<h3>supported os</h3>
+<p>
+only Mac OSX ( 10.6, 10.7, 10.8 ).
+</p>
 
 
