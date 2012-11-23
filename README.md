@@ -18,7 +18,7 @@ For more details about ocrad library, please check <a href="http://www.gnu.org/s
 <ol>
 <li>ofxOcrad ocrad;</li>
 <li>ocrad.setOfImage( Ofimage *image );</li>
-<li>printf("%d\n", ocrad.str_result);  // now you got result</li>
+<li>printf("%s\n", ocrad.str_result);  // now you got result</li>
 </ol>
 
 <h3>supported os</h3>
