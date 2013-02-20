@@ -2,15 +2,32 @@
 
 //--------------------------------------------------------------
 void ofxOcrad::setOfImage(ofImage *image){
-	OCRAD_Descriptor * od;
-	OCRAD_Pixmap pixmap;
-	char str[512];
-	
+	pixmap.data = image->getPixels();
+	pixmap.height = image->getHeight();
+	pixmap.width =  image->getWidth();
+	pixmap.mode = OCRAD_greymap;
+}
+
+void ofxOcrad::setImage(ofImage *image)
+{
 	pixmap.data = image->getPixels();
 	pixmap.height = image->getHeight();
 	pixmap.width =  image->getWidth();
 	pixmap.mode = OCRAD_greymap;
 	
+}
+void ofxOcrad::setImage(unsigned char *image, int w, int h)
+{
+	pixmap.data = image;
+	pixmap.height = h;
+	pixmap.width =  w;
+	pixmap.mode = OCRAD_greymap;
+}
+
+void ofxOcrad::doOCR()
+{
+	OCRAD_Descriptor * od;
+	char str[1024];
 	const unsigned char invert = 1;
 	int blocknum, linenum;
 	od = OCRAD_open();
@@ -30,4 +47,5 @@ void ofxOcrad::setOfImage(ofImage *image){
 	}
 	strcpy(str_result, str);
 	OCRAD_close(od);
+
 }
