@@ -8,6 +8,8 @@ For more details about ocrad library, please check <a href="http://www.gnu.org/s
 
 <h3>getting started</h3>
 <ol>
+<li>get ocrad source and compile. </li>
+<li>get ocradlib.a and ocradlib.h</li>
 <li>makes a ofxOcrad directory in addon directory</li>
 <li>copy src, include and libs directory in ofxOcrad</li>
 <li>drag & drop "ofxOcrad" directory to ofxOcrad folder on xcode</li>
